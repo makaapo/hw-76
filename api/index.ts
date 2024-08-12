@@ -1,6 +1,7 @@
 import express from 'express';
 import fileDb from './fileDb';
 import cors, {CorsOptions} from 'cors';
+import messageRouter from './routers/messages';
 
 const app = express();
 const port = 8000;
@@ -18,6 +19,7 @@ const corsOptions: CorsOptions = {
 
 app.use(cors(corsOptions));
 app.use(express.json());
+app.use('/messages', messageRouter);
 
 const run = async () => {
   await fileDb.init();

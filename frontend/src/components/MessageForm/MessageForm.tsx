@@ -25,7 +25,10 @@ const MessageForm: React.FC<Props> = ({addNewMessageRequest}) => {
   const onFormSubmit = (e: FormEvent) => {
     e.preventDefault();
     addNewMessageRequest(e, message);
-    setMessage({author: '', message: ''});
+    setMessage({
+      author: '',
+      message: ''
+    });
   };
 
   return (
@@ -47,7 +50,10 @@ const MessageForm: React.FC<Props> = ({addNewMessageRequest}) => {
       <Typography variant="h6" sx={{mb: 2}}>Send a Message</Typography>
       <form
         onSubmit={onFormSubmit}
-        style={{display: 'flex', flexDirection: 'column', gap: 2}}
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 2}}
       >
         <TextField
           label="Author"

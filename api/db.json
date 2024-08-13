@@ -1,0 +1,50 @@
+[
+  {
+    "id": "86e96f9c-7c0d-4dd1-ac8e-e2a1c2321d74",
+    "message": "Hello world!",
+    "author": "Malik",
+    "datetime": "2024-08-13T09:28:44.775Z"
+  },
+  {
+    "id": "5c792aec-7319-4f4f-aabc-6563a6509b4b",
+    "message": "Привет!",
+    "author": "Malik",
+    "datetime": "2024-08-13T09:29:03.313Z"
+  },
+  {
+    "id": "658aa134-84e6-4b4c-ad0f-c96455e9043a",
+    "message": "Салам",
+    "author": "Малик",
+    "datetime": "2024-08-13T09:29:37.283Z"
+  },
+  {
+    "id": "f53fae78-3277-4657-83d9-f33466f47e58",
+    "message": "Привет мир!",
+    "author": "Малик",
+    "datetime": "2024-08-13T09:30:22.121Z"
+  },
+  {
+    "id": "13a21930-1639-4e54-9870-6b189b0525ab",
+    "message": "yes",
+    "author": "Maria",
+    "datetime": "2024-08-13T09:55:14.703Z"
+  },
+  {
+    "id": "e3a654d6-04e9-449d-9a11-b1252e62bcd0",
+    "message": "Privet",
+    "author": "Nikita",
+    "datetime": "2024-08-13T09:58:10.193Z"
+  },
+  {
+    "id": "50a5ec63-6553-4626-ac88-e77e45485416",
+    "message": "Hello",
+    "author": "Andrey",
+    "datetime": "2024-08-13T10:06:14.292Z"
+  },
+  {
+    "id": "62bb7424-5675-4784-9c65-b21e434c4e08",
+    "message": "Привет",
+    "author": "Evgeny",
+    "datetime": "2024-08-13T10:07:31.757Z"
+  }
+]

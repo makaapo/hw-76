@@ -36,7 +36,10 @@ const messagesSlice = createSlice({
         state.loading = true;
       })
       .addCase(fetchMessagesInterval.fulfilled, (state, {payload: messages}) => {
-        state.messages = messages;
+        const newMessages = messages.filter(newMessage =>
+          !state.messages.find(message => message.id === newMessage.id)
+        );
+        state.messages = [...state.messages, ...newMessages];
         state.loading = false;
       })
       .addCase(fetchMessagesInterval.rejected, (state) => {

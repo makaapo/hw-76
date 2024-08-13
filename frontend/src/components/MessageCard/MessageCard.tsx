@@ -9,7 +9,11 @@ interface Props {
 
 const MessageCard: React.FC<Props> = ({message}) => {
   return (
-    <Card sx={{minWidth: 275, mt: 2, boxShadow: 10}}>
+    <Card sx={{
+      minWidth: 275,
+      mt: 2,
+      boxShadow: 10
+    }}>
       <CardHeader
         title={
           <Box
@@ -23,19 +27,30 @@ const MessageCard: React.FC<Props> = ({message}) => {
               paddingRight: 2,
             }}
           >
-            <Typography variant="h6" component="div">
-              <strong>Author:</strong> {message.author}
+            <Typography
+              variant="h6"
+              component="div">
+              <strong>Author: </strong>
+              {message.author}
             </Typography>
-            <Typography variant="body2" color="text.secondary" component="div">
+            <Typography
+              variant="body2"
+              color="text.secondary"
+              component="div">
               {dayjs(message.datetime).format('DD.MM.YYYY HH:mm')}
             </Typography>
           </Box>
         }
-        sx={{paddingBottom: 0}}
+        sx={{
+          paddingBottom: 0
+      }}
       />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          <strong>Message:</strong> {message.message}
+        <Typography
+          variant="body2"
+          color="text.secondary">
+          <strong>Message: </strong>
+          {message.message}
         </Typography>
       </CardContent>
     </Card>

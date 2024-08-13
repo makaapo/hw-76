@@ -1,6 +1,8 @@
+import Home from './features/Home/Home';
+
 const App = () => (
   <>
-    da
+    <Home/>
   </>
 );
 

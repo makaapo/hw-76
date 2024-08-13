@@ -8,7 +8,7 @@ interface Props {
   addNewMessageRequest: (e: FormEvent, message: IMessageForm) => void;
 }
 
-const MessageSendForm: React.FC<Props> = ({addNewMessageRequest}) => {
+const MessageForm: React.FC<Props> = ({addNewMessageRequest}) => {
   const createLoading = useAppSelector(selectLoadingCreate);
   const [message, setMessage] = useState<IMessageForm>({
     author: '',
@@ -25,7 +25,7 @@ const MessageSendForm: React.FC<Props> = ({addNewMessageRequest}) => {
   const onFormSubmit = (e: FormEvent) => {
     e.preventDefault();
     addNewMessageRequest(e, message);
-    setMessage({ author: '', message: '' });
+    setMessage({author: '', message: ''});
   };
 
   return (
@@ -107,4 +107,4 @@ const MessageSendForm: React.FC<Props> = ({addNewMessageRequest}) => {
   );
 };
 
-export default MessageSendForm;
+export default MessageForm;
